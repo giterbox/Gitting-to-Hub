@@ -6,50 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Font-importing -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     </style>
     <title>CuriculuVitae</title>
 </head>
 
-<style>
-    body {
-          background: rgb(204,204,204); 
-          width: 21cm;
-          height: 29.7cm;
-          margin: 0 auto;
-        }
-
-        page {
-          background: white;
-          display: block;
-          margin: 0 auto;
-          margin-bottom: 0.5cm;
-          position: relative;
-        }
-
-        page[size="A4"] {  
-          width: 21cm;
-          height: 29.7cm; 
-        }
-        
-        @page {
-          size: 21cm 29.7cm;
-          margin: 0mm;
-        }
-</style>
-
 <body>
-    <div id="#content">
+    <div id="content">
         <div class="container">
-            <div class="left-panel">
+            <!-- Left Panel (Personal Info, Skills, Languages, etc.) -->
+            <aside class="left-panel">
                 <section class="personalInfo">
-                    <img src="CVprofilepicture.jpg" alt="Frontier">
+                    <img src="CVprofilepicture.jpg" alt="Matej Jantošovič">
                     <h2>Contact</h2>
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -87,26 +59,20 @@
                         </a>
                     </p>
                 </section>
+
+                <!-- Skills Section -->
                 <section class="skills">
                     <h2>Skills</h2>
                     <ul>
-                        <li>
-                            <p>HTML 5</p>
-                        </li>
-                        <li>
-                            <p>CSS3</p>
-                        </li>
-                        <li>
-                            <p>SCSS</p>
-                        </li>
-                        <li>
-                            <p>jQuery</p>
-                        </li>
-                        <li>
-                            <p>Boostrap</p>
-                        </li>
+                        <li><p>HTML 5</p></li>
+                        <li><p>CSS3</p></li>
+                        <li><p>SCSS</p></li>
+                        <li><p>jQuery</p></li>
+                        <li><p>Bootstrap</p></li>
                     </ul>
                 </section>
+
+                <!-- Languages Section -->
                 <section class="languages">
                     <h2>Languages</h2>
                     <ul>
@@ -114,108 +80,93 @@
                         <li><p>English Language</p>&nbsp;<span>C1</span></li>
                     </ul>
                 </section>
+
+                <!-- Hobbies Section -->
                 <section class="hobbys">
-                    <h2>Hobbys and Freetimes activities</h2>
+                    <h2>Hobbies and Free Time Activities</h2>
                     <p>
                         In my free time, I like to read interesting books of various genres, do manual work, <br>
                         occasionally draw, mountain biking, travel, and hike, <br>
                         but my favorite thing is learning how to rotate block elements using JavaScript.
                     </p>
                 </section>
-                <div class="additionalInformation">
-                    <section class="free-time-hobby">
-                        <h2>Additional Information</h2>
-                        <p>
-                            I have several projects on GitHub (This is one of them) <br>
-                            where I am actively trying to improme my skills in web development. <br>
-                            While these projects are not yet perfect, I regularly work on them in my free time. <br>
-                            I use them as a learning and development tool, constantly trying to implement new
-                            technologies and practice what i have learned.
-                        </p>
-                    </section>
-                </div>
-            </div>
 
+                <!-- Additional Information Section -->
+                <section class="free-time-hobby">
+                    <h2>Additional Information</h2>
+                    <p>
+                        I have several projects on GitHub (This is one of them) <br>
+                        where I am actively trying to improve my skills in web development. <br>
+                        While these projects are not yet perfect, I regularly work on them in my free time. <br>
+                        I use them as a learning and development tool, constantly trying to implement new technologies and practice what I have learned.
+                    </p>
+                </section>
+            </aside>
+
+            <!-- Right Panel (Work Experience, Education) -->
             <main class="main-skills-right-panel">
                 <div class="right-panel">
                     <header>
                         <h1>Matej Jantošovič</h1>
                     </header>
+
+                    <!-- Work Experience Section -->
                     <section class="work-experience">
-                        <div class="job-position">
-                            <h2 class="description">Work Experience</h2>
-                            <h2>Petschenig</h2>
-                            <h3>Production line operator</h3>
+                        <h2>Work Experience</h2>
+
+                        <article class="job-position">
+                            <h3>Petschenig</h3>
+                            <h4>Production line operator</h4>
                             <span>2023 - 2024</span>
                             <ul>
-                                <li>
-                                    <p>Programing line production</p>
-                                </li>
-                                <li>
-                                    <p>Quality control</p>
-                                </li>
-                                <li>
-                                    <p>Production line maintenance</p>
-                                </li>
+                                <li><p>Programing line production</p></li>
+                                <li><p>Quality control</p></li>
+                                <li><p>Production line maintenance</p></li>
                             </ul>
-                        </div>
-                        <div class="job-position">
-                            <h2>Glassmarte</h2>
-                            <h3>Production line operator</h3>
+                        </article>
+
+                        <article class="job-position">
+                            <h3>Glassmarte</h3>
+                            <h4>Production line operator</h4>
                             <span>2022 - 2023</span>
                             <ul>
-                                <li>
-                                    <p>Production line operator</p>
-                                </li>
-                                <li>
-                                    <p>Quality control</p>
-                                </li>
-                                <li>
-                                    <p>Production line maintenance</p>
-                                </li>
+                                <li><p>Production line operator</p></li>
+                                <li><p>Quality control</p></li>
+                                <li><p>Production line maintenance</p></li>
                             </ul>
-                        </div>
-                        <div class="job-position">
-                            <h2>Hella Slovakia Front Lightning</h2>
-                            <h3>Logistic manipulator, planner</h3>
+                        </article>
+
+                        <article class="job-position">
+                            <h3>Hella Slovakia Front Lightning</h3>
+                            <h4>Logistic manipulator, planner</h4>
                             <span>2019 - 2021</span>
                             <ul>
-                                <li>
-                                    <p>Planning production</p>
-                                </li>
-                                <li>
-                                    <p>Material storage</p>
-                                </li>
-                                <li>
-                                    <p>Logistic manipulator</p>
-                                </li>
+                                <li><p>Planning production</p></li>
+                                <li><p>Material storage</p></li>
+                                <li><p>Logistic manipulator</p></li>
                             </ul>
-                        </div>
-                        <div class="job-position">
-                            <h2>Power Tec GmbH</h2>
-                            <h3>CNC machine operator</h3>
+                        </article>
+
+                        <article class="job-position">
+                            <h3>Power Tec GmbH</h3>
+                            <h4>CNC machine operator</h4>
                             <span>2014 - 2018</span>
                             <ul>
-                                <li>
-                                    <p>Drilling machine work</p>
-                                </li>
-                                <li>
-                                    <p>Work on hydraulic ramp</p>
-                                </li>
-                                <li>
-                                    <p>Saw Kasto twin A2, Kasto C10</p>
-                                </li>
+                                <li><p>Drilling machine work</p></li>
+                                <li><p>Work on hydraulic ramp</p></li>
+                                <li><p>Saw Kasto twin A2, Kasto C10</p></li>
                             </ul>
-                        </div>
+                        </article>
                     </section>
+
                     <hr>
-                    <h2>Education</h2>
+
+                    <!-- Education Section -->
                     <section class="education">
-                        <h2>Secondary vocational school of entrepreneurship</h2>
-                        <span> 2010 - 2014 </span>
-                        <p>
-                            Marketing worker - tourism
-                        </p>
+                        <h2>Education</h2>
+                        <h3>Secondary Vocational School of Entrepreneurship</h3>
+                        <span>2010 - 2014</span>
+                        <p>Marketing worker - tourism</p>
                     </section>
                 </div>
             </main>
