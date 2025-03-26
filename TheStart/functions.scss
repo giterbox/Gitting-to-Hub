@@ -1,0 +1,5 @@
+@function em( $size, $context: 16 ) {
+	@return ( $size / $context ) * 1em;
+}
+
+// @return (85/16) * 1em; // 5.3125em

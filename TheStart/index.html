@@ -17,6 +17,33 @@
     <title>CuriculuVitae</title>
 </head>
 
+<style>
+    body {
+          background: rgb(204,204,204); 
+          width: 21cm;
+          height: 29.7cm;
+          margin: 0 auto;
+        }
+
+        page {
+          background: white;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 0.5cm;
+          position: relative;
+        }
+
+        page[size="A4"] {  
+          width: 21cm;
+          height: 29.7cm; 
+        }
+        
+        @page {
+          size: 21cm 29.7cm;
+          margin: 0mm;
+        }
+</style>
+
 <body>
     <div id="#content">
         <div class="container">
@@ -83,8 +110,8 @@
                 <section class="languages">
                     <h2>Languages</h2>
                     <ul>
-                        <li><span>German Language</span>&nbsp;B1</li>
-                        <li><span>English Language</span>&nbsp;C1</li>
+                        <li><p>German Language</p>&nbsp;<span>B1</span></li>
+                        <li><p>English Language</p>&nbsp;<span>C1</span></li>
                     </ul>
                 </section>
                 <section class="hobbys">
@@ -190,25 +217,6 @@
                             Marketing worker - tourism
                         </p>
                     </section>
-                </div>
-                <div class="wizzard">
-                    <article>
-                        <h2>How to be a wizard</h2>
-                        <ol>
-                            <li>
-                                <p>Grow a long, majestic beard.</p>
-                            </li>
-                            <li>
-                                <p>Wear a tall, pointed hat.</p>
-                            </li>
-                            <li>
-                                <p>Have I mentioned the beard?</p>
-                            </li>
-                        </ol>
-                        <footer>
-                            <p>© 2018 Gandalf</p>
-                        </footer>
-                    </article>
                 </div>
             </main>
         </div>
